@@ -28,6 +28,7 @@
 
   	}
   	.li {
+  		list-style: none;
   	float: left;
   	border: 1px solid #888;
   	margin-left: 20px;
@@ -38,7 +39,6 @@
   	}
   	.over{
 	font-size: 20px;
-	background-image: url(images/bg1.gif);
   	}
   	.out{
 	font-size: 17px;
@@ -106,9 +106,43 @@
    .nightImg{
    	display: none;
    }
-   .nightImg2{
+   .nightImg2{width: 320px;
+   	height: 150px;
     display:block;
+    position: absolute;
+
    }
+   .img{
+	float: left;
+	width: 320px;
+	height: 150px;
+	position: relative;
+   }
+
+   ul,li{
+    padding:0; 
+    margin:0; 
+    overflow:hidden;
+	}
+	li{ 
+		list-style:none;
+	}
+	#img{ 
+		border:0;
+		 width:320px; 
+		 height:150px;  
+	}
+	.ul2{ 
+		align:center;
+		width:1000px;
+		margin-left: 325px;
+	}
+	.ul2 li{ 
+		float:left;
+		 width:200px; 
+		 height:150px; 
+		 margin:10px 10px 10px 10px;
+		}
 </style>
 
 </head>
@@ -135,12 +169,17 @@
 	<input type="button" class="btn" id="btn2" onclick="show()" value="显示更多日常图">
 </div>
 
-<div>
-	<img class="nightImg"  id="nightImg" src="images/01.jpg" alt="">
-	<img class="nightImg" id="nightImg" src="images/02.jpg" alt="">
-	<img class="nightImg" id="nightImg" src="images/03.jpg" alt="">
-	<img class="nightImg" id="nightImg" src="images/04.jpg" alt="">
-	<img class="nightImg" id="nightImg" src="images/05.jpg" alt="">
+<div id="nightImg" class="nightImg">
+<ul class="ul2">
+	<li><img src="images/01.jpg" alt="" class="img"></li>
+	<li><img src="images/02.jpg" alt="" class="img"></li>
+	<li><img src="images/03.jpg" alt="" class="img"></li>
+	<li><img src="images/04.jpg" alt="" class="img"></li>
+	<li><img src="images/09.jpg" alt="" class="img"></li>
+	<li><img src="images/10.jpg" alt="" class="img"></li>
+	<li><img src="images/11.jpg" alt="" class="img"></li>
+	<li><img src="images/12.jpg" alt="" class="img"></li>
+</ul>
 </div>
 <script type="text/javascript">
 	window.onload=function(){shownext();init();}
@@ -177,7 +216,7 @@
 
 	function show(){
 		var nightImg = document.getElementById("nightImg");
-		this.style.visibility="visible;
+		nightImg.className="nightImg2";
 	}
 </script>
 </body>
