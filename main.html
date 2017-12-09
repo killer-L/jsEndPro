@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+ 	*{
+      margin: 0px;
+      padding:0px;
+ 	 }
+  body{
+  	 text-align:center;
+  	 background-color: #888;
+  	}
+  .menu{
+    width:100%;
+    background-color: #000;
+    display: inline-block;
+    }
+  
+  .ul{
+    display: inline-block;
+    list-style-type:none;
+
+  	}
+  	.li {
+  	float: left;
+  	border: 1px solid #888;
+  	margin-left: 20px;
+  	margin-top: 7px;
+  	height: 40px;
+  	border-radius:5px;
+  	font-family:"华文行楷";
+  	}
+  	.over{
+	font-size: 20px;
+	background-image: url(images/bg1.gif);
+  	}
+  	.out{
+	font-size: 17px;
+  	}
+ 	a{
+  	color:#FFF;
+    text-decoration: none;
+    display:block;
+    float: left; 
+    padding:10px 20px 15px 20px;
+ 	}
+	.title1 {
+  	margin-left: 50px;
+  	margin-right: 50px;
+   	display:block;
+    float: left;
+    font-family:"华文行楷";
+ 	} 
+	.main{
+  	margin-top: 20px;
+  	width: 1000px;
+	height: 400px;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+  	}
+  	img{
+  	width: 1000px;
+  	height: 400px;
+  }
+  .title2{
+  	margin-top: 15px;
+  	margin-bottom: 20px;
+  	font-family:"华文行楷";
+  	font-size: 30px;
+  }
+  .left{
+	width: 50px;
+	height: 100px;
+	background: url("images/spirte.png") no-repeat left top;
+	left: 0px;
+	top: 150px;
+	background-color: black;
+	opacity: 0.4;
+	position: absolute;
+	filter:alpha(opacity=50);
+  }
+	.right{
+	width: 50px;
+	height: 100px;
+	background: url("images/spirte.png") no-repeat right top;
+	right: 0px;
+	top: 150px;
+	background-color: black;
+	opacity: 0.4;
+	position: absolute;
+	filter:alpha(opacity=50);
+   }
+   .btn{
+   	background-color: #888;
+   	border: 2px solid black;
+	width: 150px;
+   	height: 50px;
+   }
+   .nightImg{
+   	display: none;
+   }
+   .nightImg2{
+    display:block;
+   }
+</style>
+
+</head>
+<body>
+<div class="menu">
+	<ul class="ul">
+		<div class="li"><li><a href="">校园风光</a></li></div>
+		<div class="li"><li><a href="">校园简介</a></li></div>
+		<div class="title1"><a href="">◄-- 我的大学生活 --►</a></div>
+		<div class="li"><li><a href="">个人资料</a></li></div>
+		<div class="li"><li><a href="">个人经历</a></li></div>
+	</ul>	
+
+</div>
+<div class="tit"><p class="title2" id="title2">机电夜景风光</p></div>
+<div class="main">
+    	<div class="left" onclick="pre()"></div>
+    	<div class="right" onclick="next()"></div>
+    	<img src="images/01.jpg" id="img1">
+</div>
+<br>
+<div>
+	<input type="button" class="btn" id="btn1" onclick="show()" value="显示更多夜景图">
+	<input type="button" class="btn" id="btn2" onclick="show()" value="显示更多日常图">
+</div>
+
+<div>
+	<img class="nightImg"  id="nightImg" src="images/01.jpg" alt="">
+	<img class="nightImg" id="nightImg" src="images/02.jpg" alt="">
+	<img class="nightImg" id="nightImg" src="images/03.jpg" alt="">
+	<img class="nightImg" id="nightImg" src="images/04.jpg" alt="">
+	<img class="nightImg" id="nightImg" src="images/05.jpg" alt="">
+</div>
+<script type="text/javascript">
+	window.onload=function(){shownext();init();}
+	var arr=["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg","images/06.jpg","images/07.jpg","images/08.jpg"];
+	var index=0;
+	var time=null;
+	function shownext(){
+		var img1=document.getElementById("img1");
+		var title2=document.getElementById("title2");
+		img1.src=arr[index];
+		index++;
+		if(index==arr.length){
+			index=0;
+			title2.innerHTML="机电夜景风光";
+
+		}
+		if(index>4){
+			title2.innerHTML="机电日常风光";
+		}
+		time=window.setTimeout("shownext()", 2000);
+	}
+
+	function init(){
+		var lis = document.getElementsByTagName("li");
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].onmouseover=function(){
+				this.className="over";
+		}
+			lis[i].onmouseout=function(){
+				this.className="out";
+		}
+		};
+	}
+
+	function show(){
+		var nightImg = document.getElementById("nightImg");
+		this.style.visibility="visible;
+	}
+</script>
+</body>
+</html>
