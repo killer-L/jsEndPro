@@ -59,8 +59,15 @@
     float: left;
     font-family:"华文行楷";
  	} 
-
+ 	.title2{
+	  	margin-top: 15px;
+	  	margin-bottom: 20px;
+	  	font-family:"华文行楷";
+	  	font-size: 30px;
+  }
+	
  	/* 个人简介 */
+ 	
  	.grjj{
  		width: 100%;
  	}
@@ -82,7 +89,7 @@
 		 color:red;
 	}
 	.kmjs{
-		width:600px;
+		width:1200px;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -105,6 +112,51 @@
 	   	  	border-radius:10px;
 
    }
+   #bigimg{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		border: solid 1px black;
+		display: none;
+
+	}
+
+	#xqah_div1{
+		width: 426px;
+		margin: 0px auto;
+	}
+	#xqah_div2{
+		width: 426px;
+		height: 28px;
+		background: #888;
+	}
+	#xqah_img1{
+		width: 426px;
+		margin: 0px auto;
+		display: block;
+	}
+	.number{
+		float:left;
+		width: 24px;
+		height: 24px;
+		background: silver;
+		color: white;
+		margin-top: 2px;
+		margin-left: 10px;
+		text-align: center;
+		line-height: 24px;
+	}
+	.xqah_over{
+		float:left;
+		width: 150px;
+		height: 24px;
+		background: white;
+		color: black;
+		margin-top: 2px;
+		margin-left: 10px;
+		text-align: center;
+		line-height: 24px;
+	}
 /* 页面底部 */
 .footer {
  	   	margin-top: 20px;
@@ -130,7 +182,7 @@
 	<div class="grjj">
 	<caption>  
 		  <b>  
-		  <h2>个人资料</h2>  
+		  <h2 class="title2" id="title2">个人资料</h2>  
 		  </b>  
 	</caption>  
 	</div> 
@@ -214,83 +266,121 @@
 		</div>
 <div class="kmjs" id="kmjs">
 	<div class="grzl2_div1">
-	<table class="table2" width="600" height="100" border="1">  
+	<table class="table2" width="1200" height="100" border="1">  
 			  <tr><td colspan="4"><b>主要科目介绍</b></td></tr>  
+			  <tr>
+			  	<td>科目名称(摸我有惊喜)</td>
+				<td>介绍</td>
+				<td>特点</td>
+			  </tr>
 			  <tr>  
-			    <td  class="td1">java</td>
-				<td>李梓豪</td>
+			    <a href="images/java.jpg"></a><td  class="td1 td2" id="kmmc">java</td>
+				<td>一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</td>
+				<td>Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点[2]  。Java可以编写桌面应用程序、Web应用程序、分布式系统和嵌入式系统应用程序等</td>
 				
 			  </tr>
 			  <tr>
-			  	<td  class="td1">php</td>
-				<td>无</td>
+			  	<a href="images/php.jpg"></a><td class="td1 td2">php</td>
+				<td>PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。</td>
+				<td>PHP 独特的语法混合了 C、Java、Perl 以及 PHP 自创新的语法。
+它可以比CGI或者Perl更快速的执行动态网页——动态页面方面，与其他的编程语言相比，
+PHP是将程序嵌入到HTML文档中去执行，执行效率比完全生成htmL标记的CGI要高许多；
+PHP具有非常强大的功能，所有的CGI的功能PHP都能实现。
+它还支持几乎所有流行的数据库以及操作系统。
+最重要的是PHP可以用C、C++进行程序的扩展！
+</td>
 			  </tr>
 			  <tr>
-			  	<td  class="td1">swift</td>
-				<td>1997-12-01</td>
+			  	<a href="images/swift.jpg"></a><td class="td1 td2">swift</td>
+				<td>是苹果于2014年WWDC（苹果开发者大会）发布的新开发语言，可与Objective-C*共同运行于Mac OS和iOS平台，用于搭建基于苹果平台的应用程序。</td>
+				<td>一款易学易用的编程语言，而且它还是第一套具有与脚本语言同样的表现力和趣味性的系统编程语言。Swift的设计以安全为出发点，以避免各种常见的编程错误类别。</td>
 			  </tr>
 			  <tr>
-			  	<td  class="td1">android</td>
-				<td>广东省汕尾市</td>
+			  	<a href="images/android.jpg"></a><td  class="td1 td2">android</td>
+				<td>一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。Android操作系统最初由Andy Rubin开发，主要支持手机。</td>
+				<td>安卓是开源系统，对核心代码的开放可以使得开发者更多的参与进系统和软件的开发中来，对于普通用户来说也就等于多了更多的选择。</td>
 			  </tr>
 			  <tr>
-			  	<td  class="td1">html&css</td>
-				<td>516538</td>
+			  	<a href="images/html.jpg"></a><td  class="td1 td2">html</td>
+				<td>超级文本标记语言是标准通用标记语言下的一个应用，也是一种规范，一种标准，它通过标记符号来标记要显示的网页中的各个部分。网页文件本身是一种文本文件，通过在文本文件中添加标记符，可以告诉浏览器如何显示其中的内容（如：文字如何处理，画面如何安排，图片如何显示等）。浏览器按顺序阅读网页文件，然后根据标记符解释和显示其标记的内容，对书写出错的标记将不指出其错误，且不停止其解释执行过程，编制者只能通过显示效果来分析出错原因和出错部位。但需要注意的是，对于不同的浏览器，对同一标记符可能会有不完全相同的解释，因而可能会有不同的显示效果</td>
+				<td>简易性：超级文本标记语言版本升级采用超集方式，从而更加灵活方便。
+可扩展性：超级文本标记语言的广泛应用带来了加强功能，增加标识符等要求，超级文本标记语言采取子类元素的方式，为系统扩展带来保证。
+平台无关性：虽然个人计算机大行其道，但使用MAC等其他机器的大有人在，超级文本标记语言可以使用在广泛的平台上，这也是万维网（WWW）盛行的另一个原因。
+通用性：另外，HTML是网络的通用语言,一种简单、通用的全置标记语言。它允许网页制作人建立文本与图片相结合的复杂页面，这些页面可以被网上任何其他人浏览到，无论使用的是什么类型的电脑或浏览器。</td>
 			  </tr>
 			  <tr>
-			  	<td  class="td1">javaScript</td>
-				<td>广东省陆丰市甲子镇半径社区金冠花园三区一排1号</td>
+			  	<a href="images/css.jpg"></a><td class="td1 td2">css</td>
+				<td>层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</td>
+				<td>丰富的样式定义
+CSS提供了丰富的文档样式外观，以及设置文本和背景属性的能力；允许为任何元素创建边框，以及元素边框与其他元素间的距离，以及元素边框与元素内容间的距离；允许随意改变文本的大小写方式、修饰方式以及其他页面效果。
+易于使用和修改
+CSS可以将样式定义在HTML元素的style属性中，也可以将其定义在HTML文档的header部分，也可以将样式声明在一个专门的CSS文件中，以供HTML页面引用。总之，CSS样式表可以将所有的样式声明统一存放，进行统一管理。
+另外，可以将相同样式的元素进行归类，使用同一个样式进行定义，也可以将某个样式应用到所有同名的HTML标签中，也可以将一个CSS样式指定到某个页面元素中。如果要修改样式，我们只需要在样式列表中找到相应的样式声明进行修改。
+多页面应用
+CSS样式表可以单独存放在一个CSS文件中，这样我们就可以在多个页面中使用同一个CSS样式表。CSS样式表理论上不属于任何页面文件，在任何页面文件中都可以将其引用。这样就可以实现多个页面风格的统一。
+层叠
+简单的说，层叠就是对一个元素多次设置同一个样式，这将使用最后一次设置的属性值。例如对一个站点中的多个页面使用了同一套CSS样式表，而某些页面中的某些元素想使用其他样式，就可以针对这些样式单独定义一个样式表应用到页面中。这些后来定义的样式将对前面的样式设置进行重写，在浏览器中看到的将是最后面设置的样式效果。
+页面压缩
+在使用HTML定义页面效果的网站中，往往需要大量或重复的表格和font元素形成各种规格的文字样式，这样做的后果就是会产生大量的HTML标签，从而使页面文件的大小增加。而将样式的声明单独放到CSS样式表中，可以大大的减小页面的体积，这样在加载页面时使用的时间也会大大的减少。另外，CSS样式表的复用更大程序的缩减了页面的体积，减少下载的时间。</td>
+			  </tr>
+			  <tr>
+			  	<a href="images/js.jpg"></a><td class="td1 td2">javaScript</td>
+				<td>一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</td>
+				<td>是一种解释性脚本语言（代码不进行预编译）。 
+主要用来向HTML（标准通用标记语言下的一个应用）页面添加交互行为。
+可以直接嵌入HTML页面，但写成单独的js文件有利于结构和行为的分离。
+跨平台特性，在绝大多数浏览器的支持下，可以在多种平台下运行（如Windows、Linux、Mac、Android、iOS等）。</td>
 			
 			  </tr>
 			  <tr>
-				<td  class="td1">mysql</td>
-				<td>计算机与设计学院</td>
+				<a href="images/mysql.jpg"></a><td class="td1 td2">mysql</td>
+				<td>一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，目前属于 Oracle 旗下产品。它是最流行的关系型数据库管理系统之一，在 WEB 应用方面，MySQL是最好的 RDBMS (Relational Database Management System，关系数据库管理系统) 应用软件。
+MySQL是一种关系数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</td>
+			<td>1．使用 C和 C++编写，并使用了多种编译器进行测试，保证了源代码的可移植性。
+2．支持 AIX、FreeBSD、HP-UX、Linux、Mac OS、NovellNetware、OpenBSD、OS/2 Wrap、Solaris、Windows等多种操作系统。
+3．为多种编程语言提供了 API。这些编程语言包括 C、C++、Python、Java、Perl、PHP、Eiffel、Ruby,.NET和 Tcl 等。
+4．支持多线程，充分利用 CPU 资源。
+5．优化的 SQL查询算法，有效地提高查询速度。
+6．既能够作为一个单独的应用程序应用在客户端服务器网络环境中，也能够作为一个库而嵌入到其他的软件中。
+7．提供多语言支持，常见的编码如中文的 GB 2312、BIG5，日文的 Shift_JIS等都可以用作数据表名和数据列名。
+8．提供 TCP/IP、ODBC 和 JDBC等多种数据库连接途径。
+9．提供用于管理、检查、优化数据库操作的管理工具。
+10．支持大型的数据库。可以处理拥有上千万条记录的大型数据库。
+11．支持多种存储引擎。
+12.MySQL 是开源的，所以你不需要支付额外的费用。
+13.MySQL 使用标准的 SQL数据语言形式。
+14.MySQL 对 PHP 有很好的支持，PHP是目前最流行的 Web 开发语言。
+15.MySQL是可以定制的，采用了 GPL协议，你可以修改源码来开发自己的 MySQL 系统。
+16.在线 DDL/更改功能，数据架构支持动态应用程序和开发人员灵活性
+17.复制全局事务标识，可支持自我修复式集群
+18.复制无崩溃从机，可提高可用性
+19.复制多线程从机，可提高性能
+20.3倍更快的性能
+21.新的优化器
+22.原生JSON支持
+23.多源复制
+24.GIS的空间扩展</td>
 			  </tr>
 			</table>  
 			</div>
 </div>
 <div class="btnDiv">
 		<input type="button" class="btn" id="btn4" value="展示我的兴趣爱好">
-		</div>
+</div>
+<div class="xqah" id="xqah">
+	<div class="xqah_div1" id="xqah_div1">
+   <img src="images/music.jpg" alt="" class="xqah_img1" id="xqah_img1">
+   	<div id="xqah_div2" class="xqah_div2">
+   		<div class="number">1</div>
+   		<div class="number">2</div>
+   		<div class="number">3</div>
+   		<div class="number">4</div>
+   		<div class="number">5</div>
+   	</div>
+   	</div>
+</div>
+</div>
 
-		<div class="xqah" id="xqah">
-	<div class="grzl2_div1">
-	<table class="table2" width="600" height="100" border="1">  
-			  <tr><td colspan="4"><b>主要科目介绍</b></td></tr>  
-			  <tr>  
-			    <td>java</td>
-				<td>李梓豪</td>
-				
-			  </tr>
-			  <tr>
-			  	<td>php</td>
-				<td>无</td>
-			  </tr>
-			  <tr>
-			  	<td>swift</td>
-				<td>1997-12-01</td>
-			  </tr>
-			  <tr>
-			  	<td>android</td>
-				<td>广东省汕尾市</td>
-			  </tr>
-			  <tr>
-			  	<td>html&css</td>
-				<td>516538</td>
-			  </tr>
-			  <tr>
-			  	<td>javaScript</td>
-				<td>广东省陆丰市甲子镇半径社区金冠花园三区一排1号</td>
-			
-			  </tr>
-			  <tr>
-				<td>mysql</td>
-				<td>计算机与设计学院</td>
-			  </tr>
-			</table>  
-			</div>
-</div>
-</div>
 <!-- 页面底部 -->
 <div class="footer">
             <p>◄-- 我的大学生活 --►</p>
@@ -325,12 +415,71 @@
 		$("#btn4").click(function(event) {
 			if ($("#xqah").is(":hidden")) {
 				$("#xqah").show();
+				init2();
 			}else{
 				$("#xqah").hide();
 			}
 		});
-		
-	})
+
+		$(".td2").mouseover(function(event) {
+
+			var path=$(this).text();
+			
+    		$("body").append("<div id='bigimg'><img src='images/"+path+".jpg' alt='' id='img2'/></div>");
+    		$("#bigimg").show();
+    		$("#bigimg").css("left",event.pageX+10+"px");
+    		$("#bigimg").css("top",event.pageY+10+"px");
+    	}).mouseout(function(event) {
+    		$("#bigimg").remove();
+    	}).mousemove(function(event) {
+			$("#bigimg").css("left",event.pageX+10+"px");
+    		$("#bigimg").css("top",event.pageY+10+"px");  
+    	}).click(function(event) {
+    		return false;
+    	});
+	
+		})
+	/*兴趣爱好*/
+    	var arr1=["images/music.jpg","images/sport.jpg","images/talk.jpg",
+    				"images/trip.jpg","images/computer.jpg"];
+	   	var arr2=["听音乐","做运动","聚会聊天","旅游","敲代码"];
+	   	var index=0;
+	    var oldindex=-1;
+	   	var time=null;
+	   	function init2(){
+	   		var div2=document.getElementById("xqah_div2");
+	   		var numberdiv=div2.getElementsByTagName("div");
+		   	for (var i = 0; i < numberdiv.length; i++) {
+	   			numberdiv[i].onclick=fun1;
+	   	};
+	   	update();
+	   }
+	   function fun1(){
+	      if(this.className=="xqah_over"){
+	         return;
+	      }
+	   	window.clearTimeout(time);
+	      index=Number(this.innerHTML)-1;
+	      update();
+	   }
+	   function update(){
+	   	var img1=document.getElementById("xqah_img1");
+	   	img1.src=arr1[index];
+	   	var div2=document.getElementById("xqah_div2");
+	   	var numberdiv = div2.getElementsByTagName("div");
+	   	numberdiv[index].innerHTML=arr2[index];
+	   	numberdiv[index].className="xqah_over";
+	      if (oldindex!=-1) {
+	         numberdiv[oldindex].innerHTML=oldindex+1;
+	         numberdiv[oldindex].className="number";
+	      };
+	      oldindex=index;
+	   	index++;
+	   	if (index==arr1.length) {
+	   		index=0;
+	   	}
+	   	time=window.setTimeout("update()",1000);
+	   }
 </script>
 </body>
 </html>

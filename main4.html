@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	*{
+      margin: 0px;
+      padding:0px;
+ 	 }
+  body{
+  	 text-align:center;
+  	 background-color: #888;
+  	}
+  .menu{
+    width:100%;
+    background-color: #000;
+    display: inline-block;
+    }
+    .over{
+	font-size: 20px;
+  	}
+  	.out{
+	font-size: 17px;
+  	}
+  
+  .ul{
+    display: inline-block;
+    list-style-type:none;
+
+  	}
+  	.li {
+  		list-style: none;
+  	float: left;
+  	border: 1px solid #888;
+  	margin-left: 20px;
+  	margin-top: 7px;
+  	height: 40px;
+  	border-radius:5px;
+  	font-family:"华文行楷";
+  	}
+ 	a{
+  	color:#FFF;
+    text-decoration: none;
+    display:block;
+    float: left; 
+    padding:10px 20px 15px 20px;
+ 	}
+	.title1 {
+  	margin-left: 50px;
+  	margin-right: 50px;
+   	display:block;
+    float: left;
+    font-family:"华文行楷";
+ 	} 
+ 	.title2{
+	  	margin-top: 15px;
+	  	margin-bottom: 20px;
+	  	font-family:"华文行楷";
+	  	font-size: 30px;
+  }
+</style>
+</head>
+<body>
+
+<div class="menu">
+	<ul class="ul">
+		<div class="li"><li><a href="main.html">校园风光</a></li></div>
+		<div class="li"><li><a href="main2.html">校园简介</a></li></div>
+		<div class="title1"><a href="">◄-- 我的大学生活 --►</a></div>
+		<div class="li"><li><a href="main3.html">个人资料</a></li></div>
+		<div class="li"><li><a href="main4.html">个人经历</a></li></div>
+	</ul>	
+</div>
+<!-- 个人经历 -->
+<div>
+	<div class="grjl1">
+	<caption>  
+		  <b>  
+		  <h2 class="title2" id="title2">个人资料</h2>  
+		  </b>  
+	</caption>  
+	</div> 
+</div>
+
+<!-- 页面底部 -->
+<div class="footer">
+            <p>◄-- 我的大学生活 --►</p>
+</div>
+
+<script type="text/javascript">
+	window.onload=function(){init();}
+
+	function init(){
+		var lis = document.getElementsByTagName("li");
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].onmouseover=function(){
+				this.className="over";
+		}
+			lis[i].onmouseout=function(){
+				this.className="out";
+		}
+		};
+	}
+</script>
+    
+</body>
+</html>
