@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
 <style type="text/css">
 	*{
       margin: 0px;
@@ -63,6 +64,50 @@
 	  	font-family:"华文行楷";
 	  	font-size: 30px;
   }
+  /* 个人经历 */
+  .grjl{
+  	width: 100%;
+  }
+  .grjl1{
+  	display:block;
+	   	width: 100%;
+	   	overflow:auto;
+	   	margin-top: 20px;
+		border: solid 1px red;
+  }
+  .gr_btn1{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 0px;
+	   	height: 0px;
+	   	  	border-radius:10px;
+
+   }
+    .gr_btn2{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 0px;
+	   	height: 0px;
+	   	  	border-radius:10px;
+
+   }
+    .gr_btn3{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 0px;
+	   	height: 0px;
+	   	  	border-radius:10px;
+
+   }
+
+
+  /* 页面底部 */
+.footer {
+ 	   	margin-top: 20px;
+		bottom: 0;		
+		height: 4em;
+		width: 100%;
+	}
 </style>
 </head>
 <body>
@@ -78,15 +123,34 @@
 </div>
 <!-- 个人经历 -->
 <div>
-	<div class="grjl1">
+	<div class="grjl">
 	<caption>  
 		  <b>  
 		  <h2 class="title2" id="title2">个人资料</h2>  
 		  </b>  
 	</caption>  
 	</div> 
+	<div class="grzl_menu">
+		<div>
+			<input type="button" class="gr_btn1" value="班级活动" >
+		</div>
+		<input type="button" class="gr_btn2" value="个人活动" >
+		<img src="images/logo.png" height="462" width="543" alt="" id="gr_img">	
+		<input type="button" class="gr_btn3" value="宿舍活动">
+	</div>
+<!-- 班级活动 -->
+	<div class="bjhd">
+		
+	</div>
+<!-- 	个人活动	 -->	
+	<div class="grhd">
+		
+	</div>
+<!-- 	宿舍活动	 -->	
+	<div class="sshd">
+		
+	</div>
 </div>
-
 <!-- 页面底部 -->
 <div class="footer">
             <p>◄-- 我的大学生活 --►</p>
@@ -106,6 +170,22 @@
 		}
 		};
 	}
+
+	$(function(){
+		$("#gr_img").click(function(event) {
+			$(".gr_btn1").animate({width:"150px",height:"50px"}, 1000,function(){
+				$(".gr_btn2").animate({width:"150px",height:"50px"}, 1000,function(){
+					$(".gr_btn3").animate({width:"150px",height:"50px"}, 1000);
+				})
+			})
+		});
+
+		/*$("#bjhd").hide();
+		$("#grhd").hide();
+		$("#sshd").hide();*/
+
+
+	})
 </script>
     
 </body>
