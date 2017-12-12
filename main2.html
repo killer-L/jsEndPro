@@ -6,126 +6,10 @@
 <title>Examples</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
-<script type="text/javascript" src="jquery-1.8.3.js"></script>
-<style type="text/css">
-	*{
-      margin: 0px;
-      padding:0px;
- 	 }
-  body{
-  	 text-align:center;
-  	 background-color: #888;
-  	}
-  .menu{
-    width:100%;
-    background-color: #000;
-    display: inline-block;
-    }
-  .over{
-	font-size: 20px;
-  	}
-  	.out{
-	font-size: 17px;
-  	}
-  .ul{
-    display: inline-block;
-    list-style-type:none;
+<link href="css/jsEndPro.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jsEndPro-main2.js"></script>
 
-  	}
-  	.li {
-  		list-style: none;
-  	float: left;
-  	border: 1px solid #888;
-  	margin-left: 20px;
-  	margin-top: 7px;
-  	height: 40px;
-  	border-radius:5px;
-  	font-family:"华文行楷";
-  	}
- 	a{
-  	color:#FFF;
-    text-decoration: none;
-    display:block;
-    float: left; 
-    padding:10px 20px 15px 20px;
- 	}
-	.title1 {
-  	margin-left: 50px;
-  	margin-right: 50px;
-   	display:block;
-    float: left;
-    font-family:"华文行楷";
- 	} 
-
-/*  	校园简介1 */
-	.xyjj1 h2{
-		margin-top:20px;
-	}
-	.xyjj1{
-		width: 100%;
-	}
-	.xbdiv{
-		 width:1150px;
-		 margin:0 auto;
-		 text-align:center;
-	}
-	.xxzl1{
-	   	display:block;
-	   	width: 100%;
-	   	
-	   	
-	}
-	.xxzl_div1{
-		width:500px;
-	}
-	.table1{
-		background-color:white;
-		overflow:auto;
-		float: left;
-	}
-	.xxzl2{
-	   	display:block;
-	   	width: 100%;
-	   	overflow:auto;
-	   	margin-top: 20px;
-	   	
-	}
-	.xz2bdiv{
-		 float:left;
-	}
-	.xxzl2_div1{
-		width:500px;
-		
-	}
-	.xxzl2_div1 img{
-		margin-top:10px;
-
-	}
-	.xxzl2_div2{
-		width:600px;
-		float: left;
-		margin-top:10px;
-	}
-	.table2{
-		background-color:white;
-
-	}
-
-	.td1{
-		color: red;
-	}
-
-/* 页面底部*/
-	 .footer {
- 	   	margin-top: 20px;
-		bottom: 0;		
-		height: 4em;
-		width: 100%;
-	}
-	
-
-</style>
 </head>
 <body>
     <!-- 页面菜单 -->
@@ -162,7 +46,8 @@
 			  </tr>
 			</table>  
 			</div>
-			<img src="images/xiaohui.jpg" height="300" width="300" alt="">
+			<a href="http://www.gdmec.com"><img src="images/xiaohui.jpg" height="300" width="300" alt="">
+			点击图片进入官网</a>
 	</div>
 
 <div class="xxzl2">
@@ -235,20 +120,5 @@
 <div class="footer">
             <p>◄-- 我的大学生活 --►</p>
 </div>
-<script type="text/javascript">
-	window.onload=function(){init();}
-
-	function init(){
-		var lis = document.getElementsByTagName("li");
-		for (var i = 0; i < lis.length; i++) {
-			lis[i].onmouseover=function(){
-				this.className="over";
-		}
-			lis[i].onmouseout=function(){
-				this.className="out";
-		}
-		};
-	}
-</script>
 </body>
 </html>

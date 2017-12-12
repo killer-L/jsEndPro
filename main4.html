@@ -6,109 +6,10 @@
 <title>Examples</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
-<script type="text/javascript" src="jquery-1.8.3.js"></script>
-<style type="text/css">
-	*{
-      margin: 0px;
-      padding:0px;
- 	 }
-  body{
-  	 text-align:center;
-  	 background-color: #888;
-  	}
-  .menu{
-    width:100%;
-    background-color: #000;
-    display: inline-block;
-    }
-    .over{
-	font-size: 20px;
-  	}
-  	.out{
-	font-size: 17px;
-  	}
-  
-  .ul{
-    display: inline-block;
-    list-style-type:none;
+<link href="css/jsEndPro.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jsEndPro-main4.js"></script>
 
-  	}
-  	.li {
-  		list-style: none;
-  	float: left;
-  	border: 1px solid #888;
-  	margin-left: 20px;
-  	margin-top: 7px;
-  	height: 40px;
-  	border-radius:5px;
-  	font-family:"华文行楷";
-  	}
- 	a{
-  	color:#FFF;
-    text-decoration: none;
-    display:block;
-    float: left; 
-    padding:10px 20px 15px 20px;
- 	}
-	.title1 {
-  	margin-left: 50px;
-  	margin-right: 50px;
-   	display:block;
-    float: left;
-    font-family:"华文行楷";
- 	} 
- 	.title2{
-	  	margin-top: 15px;
-	  	margin-bottom: 20px;
-	  	font-family:"华文行楷";
-	  	font-size: 30px;
-  }
-  /* 个人经历 */
-  .grjl{
-  	width: 100%;
-  }
-  .grjl1{
-  	display:block;
-	   	width: 100%;
-	   	overflow:auto;
-	   	margin-top: 20px;
-		border: solid 1px red;
-  }
-  .gr_btn1{
-	   	background-color: #888;
-	   	border: 2px solid black;
-		width: 0px;
-	   	height: 0px;
-	   	  	border-radius:10px;
-
-   }
-    .gr_btn2{
-	   	background-color: #888;
-	   	border: 2px solid black;
-		width: 0px;
-	   	height: 0px;
-	   	  	border-radius:10px;
-
-   }
-    .gr_btn3{
-	   	background-color: #888;
-	   	border: 2px solid black;
-		width: 0px;
-	   	height: 0px;
-	   	  	border-radius:10px;
-
-   }
-
-
-  /* 页面底部 */
-.footer {
- 	   	margin-top: 20px;
-		bottom: 0;		
-		height: 4em;
-		width: 100%;
-	}
-</style>
 </head>
 <body>
 
@@ -132,23 +33,77 @@
 	</div> 
 	<div class="grzl_menu">
 		<div>
-			<input type="button" class="gr_btn1" value="班级活动" >
+			<input type="button" class="gr_btn1" value="个人活动" onclick="shownext2()">
 		</div>
-		<input type="button" class="gr_btn2" value="个人活动" >
-		<img src="images/logo.png" height="462" width="543" alt="" id="gr_img">	
-		<input type="button" class="gr_btn3" value="宿舍活动">
+		<input type="button" class="gr_btn2" value="班级活动" >
+		<img src="images/logo.png" height="462" width="543" alt="" id="gr_img1">	
+		<input type="button" class="gr_btn3" value="军训生活">
 	</div>
+
+<!-- 个人活动	-->
+	<div class="grhd">
+		<div class="grjl">
+		<caption>  
+			  <b>  
+			  <h2 class="title2" id="title2">个人活动</h2>  
+			  </b>  
+		</caption>  
+		</div>
+		<div class="grhd2">
+		    <img src="images/gr1.jpg" height="400" width="500" id="gr_img2">
+		</div>
+	</div> 
 <!-- 班级活动 -->
 	<div class="bjhd">
-		
+		<div class="bjhd1">
+		<caption>  
+			  <b>  
+			  <h2 class="title2" id="title2">班级活动</h2>  
+			  </b>  
+		</caption>  
+		</div>
+		<div class="bjhd2">
+			<ul class="bjhd_ul">
+				<li><img src="images/bh1.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh2.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh3.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh4.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh5.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh6.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh7.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh8.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh9.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh10.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh11.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+				<li><img src="images/bh12.jpg" alt="" class="bjhd_img" id="bjhd_img"></li>
+			</ul>
+
+		</div>
 	</div>
-<!-- 	个人活动	 -->	
-	<div class="grhd">
-		
-	</div>
-<!-- 	宿舍活动	 -->	
-	<div class="sshd">
-		
+
+<!-- 	军训生活	 -->	
+	<div class="jxhd">
+		<div class="jxhd1">
+		<caption>  
+			  <b>  
+			  <h2 class="title2" id="title2">军训生活</h2>  
+			  </b>  
+		</caption>  
+		</div>
+		<div class="jxhd2">
+			<ul class="jxhd_ul">
+				<li><img src="images/jx1.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx2.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx3.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx4.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx5.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx6.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx7.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				<li><img src="images/jx8.jpg" alt="" class="jxhd_img" id="jxhd_img"></li>
+				
+			</ul>
+
+		</div>
 	</div>
 </div>
 <!-- 页面底部 -->
@@ -156,37 +111,6 @@
             <p>◄-- 我的大学生活 --►</p>
 </div>
 
-<script type="text/javascript">
-	window.onload=function(){init();}
-
-	function init(){
-		var lis = document.getElementsByTagName("li");
-		for (var i = 0; i < lis.length; i++) {
-			lis[i].onmouseover=function(){
-				this.className="over";
-		}
-			lis[i].onmouseout=function(){
-				this.className="out";
-		}
-		};
-	}
-
-	$(function(){
-		$("#gr_img").click(function(event) {
-			$(".gr_btn1").animate({width:"150px",height:"50px"}, 1000,function(){
-				$(".gr_btn2").animate({width:"150px",height:"50px"}, 1000,function(){
-					$(".gr_btn3").animate({width:"150px",height:"50px"}, 1000);
-				})
-			})
-		});
-
-		/*$("#bjhd").hide();
-		$("#grhd").hide();
-		$("#sshd").hide();*/
-
-
-	})
-</script>
     
 </body>
 </html>

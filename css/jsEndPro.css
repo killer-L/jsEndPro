@@ -1,0 +1,428 @@
+/*
+* @Author: killer
+* @Date:   2017-12-09 17:51:37
+* @Last Modified by:   killer
+* @Last Modified time: 2017-12-12 23:57:28
+*/
+*{
+      margin: 0px;
+      padding:0px;
+ 	 }
+  body{
+  	 text-align:center;
+  	 background-color: #888;
+  	}
+  .menu{
+    width:100%;
+    background-color: #000;
+    display: inline-block;
+    }
+    .over{
+	font-size: 20px;
+  	}
+  	.out{
+	font-size: 17px;
+  	}
+  
+  .ul{
+    display: inline-block;
+    list-style-type:none;
+
+  	}
+  	.li {
+  		list-style: none;
+  	float: left;
+  	border: 1px solid #888;
+  	margin-left: 20px;
+  	margin-top: 7px;
+  	height: 40px;
+  	border-radius:5px;
+  	font-family:"华文行楷";
+  	}
+ 	a{
+  	color:#FFF;
+    text-decoration: none;
+    display:block;
+    float: left; 
+    padding:10px 20px 15px 20px;
+ 	}
+	.title1 {
+  	margin-left: 50px;
+  	margin-right: 50px;
+   	display:block;
+    float: left;
+    font-family:"华文行楷";
+ 	} 
+ 	.title2{
+	  	margin-top: 15px;
+	  	margin-bottom: 20px;
+	  	font-family:"华文行楷";
+	  	font-size: 30px;
+  }
+/*  	校园风光*/	
+	.main{
+	  	margin-top: 20px;
+	  	width: 1000px;
+		height: 400px;
+		margin: 0px auto;
+		position: relative;
+		overflow: hidden;
+  	}
+  #img1{
+	  	width: 1000px;
+	  	height: 400px;
+  }
+  
+   .btn{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 150px;
+	   	height: 50px;
+	   	  	border-radius:10px;
+
+   }
+   .img{
+		float: left;
+		width: 320px;
+		height: 150px;
+		position: relative;
+   }
+
+   ul,li{
+	    padding:0; 
+	    margin:0; 
+	    overflow:hidden;
+	}
+	li{ 
+		list-style:none;
+	}
+	#img{ 
+		 border:0;
+		 width:320px; 
+		 height:150px;  
+	}
+	#img2{ 
+		 border:0;
+		 width:640px; 
+		 height:300px;  
+	}
+	#bigimg{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		border: solid 1px black;
+		display: none;
+
+	}
+	.ul2{ 
+		align:center;
+		width:1000px;
+		margin-left: 325px;
+	}
+	.ul2 li{ 
+		float:left;
+		width:200px; 
+		height:150px; 
+		margin:10px 10px 10px 10px;
+	}
+	.Imgs{
+		display:block;
+	   	width: 100%;
+	   	overflow:auto;
+	   		}
+	.nightImg{
+		width: 1500px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.dayImg{
+		width: 1500px;
+		margin: 0 auto;
+		text-align: center;
+	}
+/*  	校园简介1 */
+	.xyjj1 h2{
+		margin-top:20px;
+	}
+	.xyjj1{
+		width: 100%;
+	}
+	.xbdiv{
+		 width:1150px;
+		 margin:0 auto;
+		 text-align:center;
+	}
+	.xxzl1{
+	   	display:block;
+	   	width: 100%;
+	   	
+	   	
+	}
+	.xxzl_div1{
+		width:500px;
+	}
+	.table1{
+		background-color:white;
+		overflow:auto;
+		float: left;
+	}
+	.xxzl2{
+	   	display:block;
+	   	width: 100%;
+	   	overflow:auto;
+	   	margin-top: 20px;
+	   	
+	}
+	.xz2bdiv{
+		 float:left;
+	}
+	.xxzl2_div1{
+		width:500px;
+		
+	}
+	.xxzl2_div1 img{
+		margin-top:10px;
+
+	}
+	.xxzl2_div2{
+		width:600px;
+		float: left;
+		margin-top:10px;
+	}
+	.table2{
+		background-color:white;
+
+	}
+
+	.td1{
+		color: red;
+	}
+
+	/* 个人简介 */
+ 	
+ 	.grjj{
+ 		width: 100%;
+ 	}
+ 	.grzl1{
+	   	display:block;
+	   	width: 100%;
+	   	overflow:auto;
+	   	margin-top: 20px;
+		border: solid 0px red;
+
+	   	
+	}
+	.grzl1_div1{
+		width:600px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.td1{
+		 color:red;
+	}
+	.kmjs{
+		width:1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.xqah{
+		width:600px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.table2{
+		background-color:white;
+	}
+	.btnDiv{
+		margin-top:20px;
+	}
+	 .btn{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 150px;
+	   	height: 50px;
+	   	  	border-radius:10px;
+
+   }
+   #bigimg{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		border: solid 1px black;
+		display: none;
+
+	}
+
+	#xqah_div1{
+		width: 426px;
+		margin: 0px auto;
+	}
+	#xqah_div2{
+		width: 426px;
+		height: 28px;
+		background: #888;
+	}
+	#xqah_img1{
+		width: 426px;
+		margin: 0px auto;
+		display: block;
+	}
+	.number{
+		float:left;
+		width: 24px;
+		height: 24px;
+		background: silver;
+		color: white;
+		margin-top: 2px;
+		margin-left: 10px;
+		text-align: center;
+		line-height: 24px;
+	}
+	.xqah_over{
+		float:left;
+		width: 150px;
+		height: 24px;
+		background: white;
+		color: black;
+		margin-top: 2px;
+		margin-left: 10px;
+		text-align: center;
+		line-height: 24px;
+	}
+
+	 /* 个人经历 */
+  .grjl{
+  	width: 100%;
+  }
+  .grjl1{
+  	display:block;
+	   	width: 100%;
+	   	overflow:auto;
+	   	margin-top: 20px;
+		border: solid 1px red;
+  }
+  	.gr_btn1{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 0px;
+	   	height: 0px;
+	   	  	border-radius:10px;
+
+   }
+    .gr_btn2{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 0px;
+	   	height: 0px;
+	   	  	border-radius:10px;
+
+   }
+    .gr_btn3{
+	   	background-color: #888;
+	   	border: 2px solid black;
+		width: 0px;
+	   	height: 0px;
+	   	  	border-radius:10px;
+
+   }
+
+   .grhd{
+   	width: 1000px;
+		height: 350px;
+		margin: 0px auto;
+		position: relative;
+		overflow: hidden;
+   }
+
+/*    班级活动*/ 
+   	.bjhd{
+   		display:block;
+	   	width: 100%;
+	   	overflow:auto;
+   	}
+   	.bjhd2{
+   	   	width: 1500px;
+		margin: 0 auto;
+		text-align: center;
+   	   	}
+   .bjhd_ul{ 
+   		align:center;
+		width:1000px;
+		margin-left: 325px;
+   
+   	}
+	.bjhd_ul li{ 
+   		float:left;
+		width:200px; 
+		height:150px; 
+		margin:10px 10px 10px 10px;
+		list-style: none;
+		padding:0; 
+	    overflow:hidden;
+   		
+   	}
+   	.bjhd_img{
+   		float: left;
+   		width: 320px;
+   		height: 150px;
+   		position: relative;
+      } 
+		#bigimg2{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		border: solid 1px black;
+		display: none;
+
+	}
+	#bjhd_img2{ 
+		 border:0;
+		 width:640px; 
+		 height:500px;  
+	}
+
+      /* 军训生活 */
+	.jxhd{
+   		display:block;
+	   	width: 100%;
+	   	overflow:auto;
+   	}
+   	.jxhd2{
+   	   	width: 1500px;
+		margin: 0 auto;
+		text-align: center;
+   	   	}
+   .jxhd_ul{ 
+   		align:center;
+		width:1000px;
+		margin-left: 325px;
+   
+   	}
+	.jxhd_ul li{ 
+   		float:left;
+		width:200px; 
+		height:150px; 
+		margin:10px 10px 10px 10px;
+		list-style: none;
+		padding:0; 
+	    overflow:hidden;
+   		
+   	}
+   	.jxhd_img{
+   		float: left;
+   		width: 320px;
+   		height: 150px;
+   		position: relative;
+      } 
+	#jxhd_img2{ 
+		 border:0;
+		 width:640px; 
+		 height:500px;  
+	}
+   /* 页面底部 */
+.footer {
+ 	   	margin-top: 50px;
+		bottom: 0;		
+		height: 4em;
+		width: 100%;
+	}
